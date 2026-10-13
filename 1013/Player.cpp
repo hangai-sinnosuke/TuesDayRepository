@@ -1,7 +1,10 @@
 #include "Player.h"
 #include <iostream>
 using namespace std;
+
+Player::Player(string name) :Character(name) {}
+
 void Player::Attack()
 {
-	cout << "å‰£ã§æ”»æ’ƒã™ã‚‹" << endl;
+	cout << "Œ•‚ÅUŒ‚‚·‚é" << endl;
 }

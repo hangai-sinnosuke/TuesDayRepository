@@ -2,22 +2,22 @@
 #include "Player.h"
 #include "Enemy.h"
 #include "Boss.h"
-
+#include "Wizard.h"
+#include "BattleManager.h"
 int main(void)
 {
-	//繧ｳ繝ｳ繧ｹ繝医Λ繧ｯ繧ｿ
-	Player player;
-	Enemy enemy;
-	Boss boss;
+	//コンストラクタ
+	Player player("勇者ヨシヒコ");
+	Wizard wizard("魔法使いメレブ");
+	Enemy enemy("スライム");
+	Boss boss("魔王");
+	BattleManager manager;
 
-	Character* character;
-
-	character = &player;
-	character->Attack();
-	character = &enemy;
-	character->Attack();
-	character = &boss;
-	character->Attack();
+	manager.StartBattle(&player);
+	manager.StartBattle(&wizard);
+	manager.StartBattle(&enemy);
+	manager.StartBattle(&boss);
 
 	return 0;
 }
+

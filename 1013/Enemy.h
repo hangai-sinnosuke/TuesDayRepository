@@ -3,5 +3,6 @@
 class Enemy :public Character
 {
 public:
+	Enemy(std::string name);
 	void Attack();
 };

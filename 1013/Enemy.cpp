@@ -2,7 +2,9 @@
 #include<iostream>
 using namespace std;
 
+Enemy::Enemy(string name) :Character(name) {}
+
 void Enemy::Attack()
 {
-	cout << "ã‹ã¿ã¤ãæ”»æ’ƒã‚’ã™ã‚‹" << endl;
+	cout << "‚©‚Ý‚Â‚«UŒ‚‚ð‚·‚é" << endl;
 }
